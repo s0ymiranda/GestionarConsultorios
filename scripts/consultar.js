@@ -1,4 +1,4 @@
-/*const urlConsultorio = "https://s0ymiranda.github.io/GestionarConsultorios/infotest.json";
+const urlConsultorio = "https://s0ymiranda.github.io/GestionarConsultorios/infotest.json";
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -34,4 +34,3 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error al obtener y mostrar los datos del consultorio', error);
         });
 });
-*/
