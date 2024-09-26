@@ -86,13 +86,19 @@ h1 {
     margin-bottom: 10px;
 }
 
-#resultado {
-    margin-bottom: 200px;
+.consultorio {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
+  
+p.consultorioInfo {
+    flex: 1;
+}
+  
+button.deleteButton {
+    margin-left: 100px; /* Puedes ajustar el margen según sea necesario */
+}
+  
 /* Efectos y ajustes en los botones */
 
 .buttons {

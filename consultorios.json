@@ -1,5 +1,5 @@
-[
+{
     {"id": 1, "nombre": "Consultorio 1"},
     {"id": 2, "nombre": "Consultorio 2"},
     {"id": 3, "nombre": "Consultorio 3"}
-]
+}
