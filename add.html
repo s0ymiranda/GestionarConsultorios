@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorios</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="scripts/agregar.js"></script>
-    <script defer src="scripts/fecha.js"></script>
+    <script defer src="scripts/add-office.js"></script>
+    <script defer src="scripts/date.js"></script>
 </head>
 <body>  
     <header>
@@ -24,47 +24,47 @@
             <h2>Organizacion - Usuario - Rol</h2>
             <h1>Agregar Consultorio </h1>
 
-            <form id="agregar-consultorio-form">
+            <form id="add-office-form">
                 <div>
-                    <label for="nombre">Nombre del Consultorio:</label>
-                    <input type="text" id="nombre" required>
+                    <label for="name">Nombre del Consultorio:</label>
+                    <input type="text" id="name" required>
                 </div>
                 <div>
-                    <label for="ubicacion">Ubicación:</label>
+                    <label for="location">Ubicación:</label>
                 </div>
                 <div>
-                    <label for="piso">Piso:</label>
-                    <select id="piso" required>
+                    <label for="floor">Piso:</label>
+                    <select id="floor" required>
                         <option value="" disabled selected>Seleccione un piso</option>
-                        <option value="1">Piso 1</option>
-                        <option value="2">Piso 2</option>
-                        <option value="3">Piso 3</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
-                    <label for="ala">Ala:</label>
-                    <select id="ala" required>
+                    <label for="wing">Ala:</label>
+                    <select id="wing" required>
                         <option value="" disabled selected>Seleccione un ala</option>
-                        <option value="A">Ala A</option>
-                        <option value="B">Ala B</option>
-                        <option value="C">Ala C</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
                     </select>
                 </div>
                 <div>
-                    <label for="estado">Estado del Consultorio:</label>
-                    <input type="text" id="estado" maxlength="50" required>
+                    <label for="state">Estado del Consultorio:</label>
+                    <input type="text" id="state" maxlength="50" required>
                 </div>
                 <div>
-                    <label for="activo">¿Está Activo?</label>
-                    <select id="activo" required>
+                    <label for="active">¿Está Activo?</label>
+                    <select id="active" required>
                         <option value="true">Sí</option>
                         <option value="false">No</option>
                     </select>
                 </div>
                 <div>
-                    <label for="observaciones">Observaciones:</label>
-                    <input type="text" id="observaciones" maxlength="50">
+                    <label for="observations">Observaciones:</label>
+                    <input type="text" id="observations" maxlength="50">
                 </div>
                 <div class="buttons">
-                    <button id="volver" onclick="location.href='index.html'">Volver</button>
+                    <button id="back" onclick="location.href='index-offices.html'">Volver</button>
                     <button type="submit">Guardar Consultorio</button>
                 </div>
             </form>

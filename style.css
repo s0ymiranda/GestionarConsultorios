@@ -77,26 +77,42 @@ h1 {
 }
 
 .search-form {
-    display: flex; /* Utilizamos flexbox para establecer el contenedor como un flex container */
-    align-items: center; /* Los elementos se alinearán verticalmente en el centro */
+    display: flex; 
+    align-items: center;
 }
 
 .search-form div {
     margin-right: 30px; /* Separación entre los elementos */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+#name {
+    width: 55%;
+}
+#observations {
+    width: 70%; 
+}
+#state {
+    width: 57%;
 }
 
-.consultorio {
+
+
+.office {
     display: flex;
     justify-content: space-between;
 }
   
-p.consultorioInfo {
+p.officeInfo {
     flex: 1;
+}
+
+.selected-office {
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 10px 0px 0px 10px;
 }
   
 button.deleteButton {
-    margin-left: 100px; /* Puedes ajustar el margen según sea necesario */
+    margin-left: 100px;
 }
   
 /* Efectos y ajustes en los botones */

@@ -1,11 +1,11 @@
-<html lang="en">
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorios</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="scripts/principal.js"></script>
-    <script defer src="scripts/fecha.js"></script>
+    <script defer src="scripts/consult-office.js"></script>
+    <script defer src="scripts/date.js"></script>
 </head>
 <body>  
     <header>
@@ -22,40 +22,38 @@
     <main>
         <div class="main-content">
             <h2>Organizacion - Usuario - Rol</h2>
-            <h1>Consultorios</h1>
-
-            <div class="search-form">
+            <h1>Consultorio</h1>
+            <form id="office-form">
                 <div>
-                    <label for="piso">Piso:</label>
-                    <select id="piso">
-                        <option value="todos">Todos</option>
-                        <option value="piso1">Piso 1</option>
-                        <option value="piso2">Piso 2</option>
-                        <option value="piso3">Piso 3</option>
+                    <label for="name">Nombre del Consultorio:</label>
+                    <input type="text" id="name" disabled>
+                </div>
+                <div>
+                    <label for="floor">Piso:</label>
+                    <input type="text" id="floor" disabled>
+                    <label for="wing">Ala:</label>
+                    <input type="text" id="wing" disabled>
+                </div>
+                <div>
+                    <label for="state">Estado del Consultorio:</label>
+                    <input type="text" id="state" maxlength="50" disabled>
+                </div>
+                <div>
+                    <label for="active">¿Está Activo?</label>
+                    <select id="active" disabled>
+                        <option value="true">Sí</option>
+                        <option value="false">No</option>
                     </select>
                 </div>
                 <div>
-                    <label for="ala">Ala:</label>
-                    <select id="ala">
-                        <option value="todos">Todos</option>
-                        <option value="alaA">Ala A</option>
-                        <option value="alaB">Ala B</option>
-                        <option value="alaC">Ala C</option>
-                    </select>
+                    <label for="observations">Observaciones:</label>
+                    <input type="text" id="observations" maxlength="50" disabled>
                 </div>
-                <div>
-                    <label for="busqueda">Id/Nombre:</label>
-                    <input type="text" id="busqueda">
-                </div>
-            </div>
-
-            <div id="resultado" class="consultorios-list">
-                <!-- Consultorios will be added here -->
-            </div>
-
+            </form>
             <div class="buttons">
-                <button id="consultar" disabled>Consultar Consultorio</button>
-                <button id="agregar" onclick="location.href='index2.html'">Agregar Consultorio</button>
+                <button id="edit">Modificar Consultorio</button>
+                <button id="save" style="display: none;">Guardar Cambios</button>
+                <button id="back" onclick="location.href='index-offices.html'">Volver</button>
             </div>
         </div>
     </main>   
